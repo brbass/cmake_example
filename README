@@ -1,0 +1,17 @@
+Usually multiple CMakeLists files would be used, with one for each directory. To keep things simple, only one CMakeLists file is included in the base directory.
+
+The directory structure is as follows:
+    src: all the source files for the project but no files with the "main" function
+    main: includes a file with the function "main" to be made into an executable
+    test: includes one or more files with the function "main" to be made into tests
+
+To build this example, do the following from the directory containing the CMakeLists file:
+   mkdir build;
+   cd build;
+   cmake ..;
+   make install;
+
+To run the tests, stay in the "build" directory and run:
+   ctest;
+
+The executables and libraries will be installed into the "bin" directory. This lets you build test code multiple times but keep a working copy in the "bin" directory.
