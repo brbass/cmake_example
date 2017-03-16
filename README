@@ -1,4 +1,4 @@
-Usually multiple CMakeLists files would be used, with one for each directory. To keep things simple, only one CMakeLists file is included in the base directory.
+Usually multiple CMakeLists files would be used, with one for each directory. For this project, only one CMakeLists file is included in the base directory for simplicity.
 
 The directory structure is as follows:
     src: all the source files for the project but no files with the "main" function
